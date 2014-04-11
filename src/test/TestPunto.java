@@ -83,6 +83,14 @@ public class TestPunto {
 		 */
 		
 		
+		/*
+		 * Test String
+		 */
+		
+		String s = "Hola Mundo";
+		
+		mostrar(s.charAt(3)); // charAt(n) devuelve el caracter n del String que lo invoca.
+		
 		
 		
 		
