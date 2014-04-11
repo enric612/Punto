@@ -47,79 +47,101 @@ public class TestPunto {
 //		
 //		mostrar(tablaPuntos[1]);
 		
+//		/*
+//		 * Test List
+//		 */
+//		
+//		List<Integer> listent = new ArrayList<Integer>(); 
+//		/*
+//		 * Es importante recordar que los ArrayList no tienen tamaño final
+//		 */
+//		
+//		
+//		
+//		listent.add(3);
+//		listent.add(44);
+//		listent.add(-34);
+//		
+//		mostrar(listent.size());
+//		
+//		List<Punto> lispun = new ArrayList<Punto>();
+//		
+//		lispun.add(new PuntoImpl(2.,3.));
+//		Punto p = new PuntoImpl(4.,5.);
+//		
+//		lispun.add(p);
+//		
+//		mostrar(lispun);
+//		
+//		mostrar(lispun.get(1));
+//		
+//		lispun.get(1).setX(88.);
+//		
+//		lispun.set(0, new PuntoImpl(3.,5.));
+//		//lispun.set(2, new PuntoImpl(3.,5.)); // Esto da una excepcion de indice fuera de rango 
+//											   //al no poder modificar un indice que no existe
+//		
+//		lispun.add(new PuntoImpl(4.,3.));
+//		lispun.add(new PuntoImpl(5.,3.));
+//		lispun.add(new PuntoImpl(6.,3.));
+//		
+//		mostrar(lispun);
+//		
+//		lispun.add(2,new PuntoImpl(99.,99.)); //Desplaza los elementos siguientes a esa posicion a la derecha
+//		
+//		mostrar(lispun);
+//		
+//		lispun.remove(p); //Solo elimina la primera aparicion del elemento, si no existe simplemente no elimina nada.
+//		
+//		mostrar(lispun);
+//		
+//		Punto q = lispun.remove(0);
+//		
+//		mostrar(q);
+//		mostrar(lispun);
+//		// mostrar(p); 
+//		/* Como vemos sigue pasando que apuntamos al objeto p por lo que al modificamos el objeto p al modificar 
+//		 * el elemento que apunta al mismo 
+//		 */
+//		
+//		
+//		/*
+//		 * Test String
+//		 */
+//		
+//		String s = "Hola Mundo";
+//		
+//		mostrar(s.charAt(3)); // charAt(n) devuelve el caracter n del String que lo invoca.
+//		
+//		mostrar(s.indexOf('M')); //indexOf(char) devuelve el indice del caracter
+//		
+//		String t = s.replace('o', 'e');
+//		
+//		mostrar("s vale "+s);
+//		mostrar("t vale "+t);
+//		
+		
 		/*
-		 * Test List
+		 * Metodo sort
 		 */
 		
-		List<Integer> listent = new ArrayList<Integer>(); 
-		/*
-		 * Es importante recordar que los ArrayList no tienen tamaño final
-		 */
+		int tabla[] = new int[6];
 		
+		tabla[0] = 3;
+		tabla[1] = 1;
+		tabla[2] = 7;
+		tabla[3] = 2;
+		tabla[4] = 5;
+		tabla[5] = 6;
 		
+		for(int i=0;i<6;i++)
+			mostrar(tabla[i]);
 		
-		listent.add(3);
-		listent.add(44);
-		listent.add(-34);
+		Arrays.sort(tabla);
 		
-		mostrar(listent.size());
-		
-		List<Punto> lispun = new ArrayList<Punto>();
-		
-		lispun.add(new PuntoImpl(2.,3.));
-		Punto p = new PuntoImpl(4.,5.);
-		
-		lispun.add(p);
-		
-		mostrar(lispun);
-		
-		mostrar(lispun.get(1));
-		
-		lispun.get(1).setX(88.);
-		
-		lispun.set(0, new PuntoImpl(3.,5.));
-		//lispun.set(2, new PuntoImpl(3.,5.)); // Esto da una excepcion de indice fuera de rango 
-											   //al no poder modificar un indice que no existe
-		
-		lispun.add(new PuntoImpl(4.,3.));
-		lispun.add(new PuntoImpl(5.,3.));
-		lispun.add(new PuntoImpl(6.,3.));
-		
-		mostrar(lispun);
-		
-		lispun.add(2,new PuntoImpl(99.,99.)); //Desplaza los elementos siguientes a esa posicion a la derecha
-		
-		mostrar(lispun);
-		
-		lispun.remove(p); //Solo elimina la primera aparicion del elemento, si no existe simplemente no elimina nada.
-		
-		mostrar(lispun);
-		
-		Punto q = lispun.remove(0);
-		
-		mostrar(q);
-		mostrar(lispun);
-		// mostrar(p); 
-		/* Como vemos sigue pasando que apuntamos al objeto p por lo que al modificamos el objeto p al modificar 
-		 * el elemento que apunta al mismo 
-		 */
-		
-		
-		/*
-		 * Test String
-		 */
-		
-		String s = "Hola Mundo";
-		
-		mostrar(s.charAt(3)); // charAt(n) devuelve el caracter n del String que lo invoca.
-		
-		mostrar(s.indexOf('M')); //indexOf(char) devuelve el indice del caracter
-		
-		String t = s.replace('o', 'e');
-		
-		mostrar("s vale "+s);
-		mostrar("t vale "+t);
-		
+		mostrar("ordenado");
+		for(int i=0;i<6;i++)
+			mostrar(tabla[i]);
 		
 		
 		
