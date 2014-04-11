@@ -91,6 +91,13 @@ public class TestPunto {
 		
 		mostrar(s.charAt(3)); // charAt(n) devuelve el caracter n del String que lo invoca.
 		
+		mostrar(s.indexOf('M')); //indexOf(char) devuelve el indice del caracter
+		
+		String t = s.replace('o', 'e');
+		
+		mostrar("s vale "+s);
+		mostrar("t vale "+t);
+		
 		
 		
 		
