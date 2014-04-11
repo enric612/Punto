@@ -77,7 +77,29 @@ public class TestPunto {
 		
 		lispun.get(1).setX(88.);
 		
-		mostrar(p); 
+		lispun.set(0, new PuntoImpl(3.,5.));
+		//lispun.set(2, new PuntoImpl(3.,5.)); // Esto da una excepcion de indice fuera de rango 
+											   //al no poder modificar un indice que no existe
+		
+		lispun.add(new PuntoImpl(4.,3.));
+		lispun.add(new PuntoImpl(5.,3.));
+		lispun.add(new PuntoImpl(6.,3.));
+		
+		mostrar(lispun);
+		
+		lispun.add(2,new PuntoImpl(99.,99.)); //Desplaza los elementos siguientes a esa posicion a la derecha
+		
+		mostrar(lispun);
+		
+		lispun.remove(p); //Solo elimina la primera aparicion del elemento, si no existe simplemente no elimina nada.
+		
+		mostrar(lispun);
+		
+		Punto q = lispun.remove(0);
+		
+		mostrar(q);
+		mostrar(lispun);
+		// mostrar(p); 
 		/* Como vemos sigue pasando que apuntamos al objeto p por lo que al modificamos el objeto p al modificar 
 		 * el elemento que apunta al mismo 
 		 */
