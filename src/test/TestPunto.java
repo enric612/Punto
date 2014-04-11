@@ -2,7 +2,7 @@ package test;
 
 import punto.*;
 
-public class test {
+public class TestPunto {
 
 	/**
 	 * @param args
