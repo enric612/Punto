@@ -140,10 +140,27 @@ public class TestPunto {
 		Arrays.sort(tabla);
 		
 		mostrar("ordenado");
-		for(int i=0;i<6;i++)
-			mostrar(tabla[i]);
+//		for(int i=0;i<6;i++)
+//			mostrar(tabla[i]);
+//	
+		for(int e:tabla){ //Similar al foreach de php, itera para cada elemento e de tipo int dentro del Array tabla (valido tambien en List)
+			mostrar(e);
+		}
 		
+		List<Punto> lp = new ArrayList<Punto>();
+		lp.add(new PuntoImpl(0.,0.));
+		lp.add(new PuntoImpl(1.,0.));
+		lp.add(new PuntoImpl(2.,0.));
+		lp.add(new PuntoImpl(3.,0.));
+		lp.add(new PuntoImpl(4.,0.));
 		
+		mostrar(lp);
+		
+		for(Punto p:lp){
+			p.setX(p.getX()+1);
+		}
+		
+		mostrar(lp);
 		
 	
 	}
