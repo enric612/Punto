@@ -32,5 +32,10 @@ public class PixelImpl extends PuntoImpl implements Pixel {
 		this.color = c;
 
 	}
+	
+	@Override
+	public String toString(){
+		return "["+super.toString()+", "+this.color+"]";
+	}
 
 }
